@@ -1,9 +1,28 @@
 aid: idoven
 name: IDOVEN
-description: 'IDOVEN is a company surfaced as a portfolio company of insight-partners, northzone and added
-  to the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Idoven builds artificial-intelligence solutions for cardiovascular care. Its flagship
+  platform, Willem, is a CE-marked Class IIa medical device that analyzes electrocardiograms
+  (ECGs) to detect, diagnose, and monitor cardiac disease, identifying 22 cardiac patterns
+  and 4 intervals across ambulatory devices, diagnostic ECGs, and insertable cardiac monitors.
+  Idoven serves MedTech companies, Life Sciences (cardiotoxicity monitoring and disease-risk
+  scoring for pharma trials), and preventative remote-screening programs. The Willem API
+  supports bi-directional data exchange in EDF, HL7, DICOM, JSON, XML, and PDF. The company
+  is headquartered in Spain, holds an extensive ISO and IEC certification program, and is
+  backed by Insight Partners and Northzone. Sector: healthcare / cardiology AI.
 url: https://raw.githubusercontent.com/api-evangelist/idoven/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/622f0a4c34214e005c775581/62cef034f22d87ff1ab2c414_62b09a2e715c2055b3a3f04e_open-graph.jpeg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -13,11 +32,28 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Healthcare
-apis: []
+- Cardiology
+- Artificial Intelligence
+- Medical Devices
+- ECG
+- Diagnostics
+- Life Sciences
+apis:
+- name: Willem API
+  description: >-
+    API for the Willem ECG analysis platform (CE-marked Class IIa medical device). Supports
+    bi-directional data exchange for ECG ingestion and cardiac-pattern analysis in EDF, HL7,
+    DICOM, JSON, XML, and PDF. Note: the API host is EU-geoblocked (returns HTTP 451 to
+    US-origin requests), so its OpenAPI specification was not mirrored into this repo.
+  humanURL: https://willem-api.idoven.ai/doc
+  baseURL: https://willem-api.idoven.ai
+  properties:
+  - type: Documentation
+    url: https://willem-api.idoven.ai/doc
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -26,3 +62,26 @@ maintainers:
 common:
 - type: Website
   url: https://www.idoven.ai/
+- type: Documentation
+  url: https://willem-api.idoven.ai/doc
+- type: GettingStarted
+  url: https://user-guides.idoven.ai/
+- type: Blog
+  url: https://www.idoven.ai/blog
+- type: TermsOfService
+  url: https://www.idoven.ai/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.idoven.ai/privacy-policy
+- type: Compliance
+  url: https://www.idoven.ai/
+- type: Conformance
+  url: conformance/idoven-conformance.yml
+- type: DomainSecurity
+  url: security/idoven-domain-security.yml
+- type: LLMsTxt
+  url: llms/idoven-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

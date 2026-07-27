@@ -1,0 +1,74 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.idoven.ai/
+docs: https://www.idoven.ai/
+notes: >-
+  Idoven's Willem platform is a CE-marked Class IIa medical device (EU MDR). The
+  company publishes an extensive certification program and supports established
+  healthcare interoperability formats. The Willem API host
+  (https://willem-api.idoven.ai/doc) returns HTTP 451 to US-origin requests
+  (EU-geoblocked), so the OpenAPI-derived cross-cutting standards (oauth2, rfc9457,
+  pagination, idempotency) could not be verified and are omitted rather than assumed.
+standards:
+  # Information security / privacy / quality management certifications (verified on website)
+  - id: iso-27001
+    name: ISO/IEC 27001 Information Security Management
+    conforms: true
+    evidence: Certification listed on idoven.ai
+  - id: iso-27017
+    name: ISO/IEC 27017 Cloud Security
+    conforms: true
+    evidence: Certification listed on idoven.ai
+  - id: iso-27018
+    name: ISO/IEC 27018 Protection of PII in Public Clouds
+    conforms: true
+    evidence: Certification listed on idoven.ai
+  - id: iso-27701
+    name: ISO/IEC 27701 Privacy Information Management
+    conforms: true
+    evidence: Certification listed on idoven.ai
+  - id: iso-13485
+    name: ISO 13485 Medical Devices Quality Management
+    conforms: true
+    evidence: Certification listed on idoven.ai
+  - id: iso-37001
+    name: ISO 37001 Anti-Bribery Management
+    conforms: true
+    evidence: Certification listed on idoven.ai
+  - id: iso-42001
+    name: ISO/IEC 42001 AI Management System
+    conforms: true
+    evidence: Certification listed on idoven.ai
+  - id: iec-81001
+    name: IEC 81001 Health Software and Health IT Systems Safety, Effectiveness and Security
+    conforms: true
+    evidence: Compliance listed on idoven.ai
+  - id: ce-mdr-class-iia
+    name: CE Mark - EU MDR Class IIa Medical Device (Willem)
+    conforms: true
+    evidence: Willem is a CE-marked Class IIa device per idoven.ai
+  - id: gdpr
+    name: EU GDPR (and Spanish LOPD-GDD)
+    conforms: true
+    evidence: GDPR + Spanish LOPD-GDD compliance stated on idoven.ai
+  - id: ens
+    name: Spanish National Security Scheme (Esquema Nacional de Seguridad)
+    conforms: true
+    evidence: ENS compliance stated on idoven.ai
+  # Healthcare interoperability data formats supported by the platform
+  - id: hl7
+    name: HL7 health data exchange format
+    conforms: true
+    evidence: idoven.ai lists HL7 among supported data exchange formats (EDF, HL7, DICOM, JSON, XML, PDF)
+  - id: dicom
+    name: DICOM medical imaging/waveform format
+    conforms: true
+    evidence: idoven.ai lists DICOM among supported data exchange formats
+  - id: edf
+    name: EDF (European Data Format) for biosignals
+    conforms: true
+    evidence: idoven.ai lists EDF among supported data exchange formats
+  - id: iec-60601-2-25
+    name: IEC 60601-2-25 (ECG diagnostic equipment)
+    conforms: true
+    evidence: Standards compliance stated on idoven.ai
